@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viñedo Freixenet - Querétaro</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+       
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #150724;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 25px;
+            background: rgba(25, 0, 45, 0.75);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #4a2368;
+        }
+
+        header a {
+            color: #d9a9ff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+      
+        .hero {
+            height: 60vh;
+            background: url('3.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0 0 20px #000;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+       
+        section {
+            padding: 70px 12%;
+            animation: fadeUp 1.4s ease both;
+        }
+
+        h2 {
+            color: #d9a9ff;
+            font-size: 38px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .divider {
+            width: 90px;
+            height: 4px;
+            background: #d9a9ff;
+            border-radius: 2px;
+            margin-bottom: 30px;
+        }
+
+       
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 230px;
+            border-radius: 12px;
+            object-fit: cover;
+            filter: brightness(0.8);
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            filter: brightness(1);
+            transform: scale(1.07);
+        }
+
+        
+        #lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.90);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 3000;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 85%;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #000;
+        }
+
+      
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        footer {
+            padding: 35px;
+            text-align: center;
+            color: #d9a9ff;
+            background: #0d0317;
+            margin-top: 70px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html">← Regresar al inicio</a>
+</header>
+
+<div class="hero">
+    <h1>Viñedo Freixenet</h1>
+</div>
+
+
+<section>
+    <h2>Sobre el viñedo</h2>
+    <div class="divider"></div>
+
+    <p>
+        Freixenet Querétaro, conocido como Finca Sala Vivé, es uno de los viñedos más importantes de México,
+        famoso por elaborar vinos espumosos mediante el método tradicional, el mismo que se utiliza en
+        Champagne, Francia. El clima semidesértico, la altitud y la composición del suelo lo convierten
+        en un lugar ideal para el cultivo de uvas de gran calidad.
+    </p>
+
+    <p>
+        Con el paso de los años, el viñedo se ha convertido en un símbolo de la región y una parada
+        obligada para quienes buscan aprender, disfrutar y vivir una experiencia única en medio
+        de la naturaleza, música, comida y vinos de gran nivel.
+    </p>
+</section>
+
+
+<section>
+    <h2>Historia del lugar</h2>
+    <div class="divider"></div>
+
+    <p>
+        El proyecto de Freixenet en Querétaro comenzó en 1979 cuando enólogos españoles descubrieron
+        que esta región mexicana contaba con condiciones similares a zonas vitivinícolas de Europa.
+        Así nació una de las cavas más impresionantes del país, construida a 25 metros de profundidad
+        para mantener una temperatura constante de 12 a 14 grados.
+    </p>
+
+    <p>
+        Hoy en día, miles de botellas descansan en estos pasillos subterráneos, donde el tiempo y el
+        silencio juegan un papel crucial en el proceso de elaboración de vinos espumosos de calidad
+        internacional.
+    </p>
+</section>
+
+
+<section>
+    <h2>Mi experiencia</h2>
+    <div class="divider"></div>
+
+    <p>
+        Al llegar al viñedo, lo primero que se siente es la tranquilidad. El aire es fresco, la música
+        suave y los colores del lugar crean una atmósfera perfecta para desconectar y relajarse.
+    </p>
+
+    <p>
+        El recorrido por la cava fue una de las partes más especiales. Conforme bajamos por las escaleras,
+        la temperatura disminuyó y las luces se volvieron más tenues. Estar rodeado de miles de botellas
+        envejeciendo en silencio es una experiencia impresionante.
+    </p>
+
+    <p>
+        Finalmente, disfrutamos una copa al aire libre en la terraza principal del viñedo. El clima era
+        perfecto, el ambiente muy relajado y la vista hacia los viñedos creó un momento memorable.
+    </p>
+</section>
+
+
+<section>
+    <h2>¿Qué puedes encontrar en Freixenet?</h2>
+    <div class="divider"></div>
+
+    <ul>
+        <li>🍾 Degustación de vinos espumosos y tranquilos.</li>
+        <li>🏞️ Recorridos guiados por viñedos y cavas subterráneas.</li>
+        <li>🍇 Explicación del proceso de elaboración del vino.</li>
+        <li>🍽️ Zona gastronómica con quesos, tapas y productos regionales.</li>
+        <li>🛍️ Tienda con vinos exclusivos, recuerdos y accesorios.</li>
+        <li>📸 Escenarios fotográficos perfectos para crear recuerdos.</li>
+    </ul>
+</section>
+
+
+<section>
+    <h2>Consejos para visitar</h2>
+    <div class="divider"></div>
+
+    <ul>
+        <li>🕒 Llega temprano para disfrutar mejor los recorridos.</li>
+        <li>👟 Usa calzado cómodo, hay caminatas y escaleras.</li>
+        <li>💧 Mantente hidratado, sobre todo si hace calor.</li>
+        <li>📸 Lleva cámara o celular, hay lugares muy fotogénicos.</li>
+        <li>🚗 Considera un conductor designado si planeas degustar varios vinos.</li>
+    </ul>
+</section>
+
+
+<section>
+    <h2>Galería</h2>
+    <div class="divider"></div>
+
+    <div class="gallery">
+        <img src="4.jpg">
+        <img src="5.jpg">
+        <img src="6.jpg">
+        <img src="7.jpg">
+        <img src="8.jpg">
+        <img src="9.jpg">
+    </div>
+</section>
+
+
+<div id="lightbox"><img id="lightbox-img"></div>
+
+<footer>
+    © 2025 · Viaje a Querétaro – Freixenet
+</footer>
+
+<script>
+   
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    document.querySelectorAll(".gallery img").forEach(img => {
+        img.addEventListener("click", () => {
+            lightboxImg.src = img.src;
+            lightbox.style.display = "flex";
+        });
+    });
+
+    lightbox.addEventListener("click", () => {
+        lightbox.style.display = "none";
+    });
+</script>
+
+</body>
+</html>
