@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje a Querétaro - Freixenet & Peña de Bernal</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #12081f;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0; left: 0;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(25, 0, 55, 0.55);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            z-index: 1000;
+            animation: fadeDown 1.2s ease forwards;
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-40px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        header h2 {
+            font-size: 28px;
+            color: #d9a9ff;
+            font-weight: 700;
+        }
+
+        nav a {
+            margin: 0 18px;
+            color: #eee;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #c07bff;
+            text-shadow: 0 0 8px #c07bff;
+        }
+
+   
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(20,0,40,0.4), rgba(10,0,20,0.8)), url('1.jpg') center/cover fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 200px 20px 50px;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            font-weight: 700;
+            line-height: 1.1;
+            text-shadow: 0 0 25px #000;
+            animation: float 6s ease infinite alternate;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0px); }
+            to   { transform: translateY(-15px); }
+        }
+
+        .hero p {
+            margin-top: 25px;
+            font-size: 22px;
+            opacity: 0.9;
+        }
+
+      
+        section {
+            padding: 90px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #d9a9ff;
+            text-shadow: 0 0 12px rgba(150,80,255,0.3);
+        }
+
+        section p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+
+     
+        .cards {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+        }
+
+        .card {
+            background: #241233;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 0 20px rgba(150, 80, 255, 0.25);
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 0 30px rgba(200, 100, 255, 0.45);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin-top: 18px;
+            font-size: 24px;
+            color: #d9a9ff;
+        }
+
+       
+        .gallery {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            padding-top: 50px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            filter: brightness(0.8);
+            transition: 0.35s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery img:hover {
+            filter: brightness(1);
+            transform: scale(1.05);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            padding: 35px;
+            text-align: center;
+            color: #d9a9ff;
+            background: #0b0414;
+            margin-top: 70px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+  
+    <header>
+        <h2>Mi Viaje a Querétaro</h2>
+        <nav>
+            <a href="#freixenet">Freixenet</a>
+            <a href="#bernal">Peña de Bernal</a>
+            <a href="#galeria">Galería</a>
+        </nav>
+    </header>
+
+  
+    <section class="hero">
+        <div>
+            <h1>Un Día Completo en Querétaro</h1>
+            <p>Viñedos • Tradición • Historia</p>
+        </div>
+    </section>
+
+   
+    <section id="freixenet">
+        <h2>🟣 Viñedo Freixenet</h2>
+        <p>
+            Visitamos las impresionantes cavas subterráneas de Freixenet, donde el vino espumoso madura en un ambiente perfecto.
+            La arquitectura, las barricas y la iluminación crean una experiencia única.  
+            Una parada que mezcla historia, vino y paisajes espectaculares.
+        </p>
+
+        <div class="cards">
+            <div class="card" onclick="location.href='freixenet.html'">
+                <img src="3.jpg">
+                <h3>Ver más sobre Freixenet</h3>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="bernal">
+        <h2>🟣 Peña de Bernal</h2>
+        <p>
+            Uno de los monolitos más grandes del mundo.  
+            Sus calles llenas de artesanías, su energía y su historia lo convierten en un lugar mágico.  
+            Un punto imperdible de Querétaro.
+        </p>
+
+        <div class="cards">
+            <div class="card" onclick="location.href='bernal.html'">
+                <img src="6.jpg">
+                <h3>Explorar Peña de Bernal</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>🟣 Galería del Viaje</h2>
+        <p>Una recopilación de los mejores momentos del viaje.</p>
+
+        <div class="gallery">
+            <img src="1.jpg">
+            <img src="2.jpg">
+            <img src="3.jpg">
+            <img src="4.jpg">
+            <img src="5.jpg">
+            <img src="6.jpg">
+            <img src="7.jpg">
+            <img src="8.jpg">
+            <img src="9.jpg">
+            <img src="10.jpg">
+            <img src="11.jpg">
+            <img src="12.jpg">
+            <img src="13.jpg">
+            <img src="14.jpg">
+            <img src="15.jpg">
+            <img src="16.jpg">
+            <img src="17.jpg">
+            <img src="18.jpg">
+            <img src="19.jpg">
+            <img src="20.jpg">
+            <img src="21.jpg">
+        </div>
+    </section>
+
+    <footer>
+        © 2025 - Mi Viaje a Querétaro JS
+    </footer>
+
+</body>
+</html>
